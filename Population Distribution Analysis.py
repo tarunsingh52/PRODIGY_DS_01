@@ -1,37 +1,3 @@
-"""
-============================================================================
- POPULATION DISTRIBUTION VISUALIZATION
-============================================================================
-Task     : Create a bar chart or histogram to visualize the distribution of
-           a categorical or continuous variable, such as the distribution
-           of ages or genders in a population.
-
-Dataset  : World Bank "Population, total" indicator (SP.POP.TOTL)
-           Source: https://data.worldbank.org/indicator/SP.POP.TOTL
-
-What this script does
-----------------------
-1. Loads the raw World Bank population export (data/*.csv).
-2. Cleans it: the raw file mixes real countries together with regional /
-   income-group aggregates (e.g. "World", "High income", "East Asia &
-   Pacific"). Those aggregates are removed so charts reflect actual
-   countries only.
-3. Produces three publication-ready charts and saves them to output/:
-      a) Bar chart   -> Top 15 most populous countries          (categorical)
-      b) Histogram   -> Distribution of population across every
-                         country in the world                    (continuous)
-      c) Bar chart   -> Number of countries per World Bank region (categorical)
-4. Prints a short statistical summary to the console.
-
-How to run
------------
-    pip install -r requirements.txt
-    python population_distribution_analysis.py
-
-Author : <your name here>
-============================================================================
-"""
-
 import glob
 import os
 import sys
